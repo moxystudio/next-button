@@ -1,12 +1,14 @@
 import React from 'react';
-import NewComponent from '@moxy/react-lib-template';
-
+import NextButton from '@moxy/next-button';
 import styles from './index.module.css';
 
 const Home = () => (
-    <div>
+    <div className={ styles.home }>
         <h1>react-lib-template</h1>
-        <NewComponent className={ styles.newComponent }>Hello World</NewComponent>
+        <p>Button:</p>
+        <NextButton>Demo Button</NextButton>
+        <p>Link as button:</p>
+        <NextButton href="https://moxy.studio" newTab>Demo Button</NextButton>
     </div>
 );
 

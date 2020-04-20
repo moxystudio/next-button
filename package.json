@@ -1,7 +1,7 @@
 {
-  "name": "@moxy/react-lib-template",
+  "name": "@moxy/next-button",
   "version": "0.0.0",
-  "description": "A template that aims to make the implementation of React component packages easier and more methodic.",
+  "description": "A react button that doubles down as a link.",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -9,18 +9,20 @@
     "es",
     "dist"
   ],
-  "homepage": "https://github.com/moxystudio/react-lib-template#readme",
-  "author": "Rui Monteiro <rui.monteiro@moxy.studio>",
+  "homepage": "https://github.com/moxystudio/next-button#readme",
+  "author": "Diogo Silva <diogo.silva@moxy.studio>",
   "license": "MIT",
   "keywords": [
-    "template"
+    "button",
+    "nextjs",
+    "react"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moxystudio/react-lib-template.git"
+    "url": "git+https://github.com/moxystudio/next-button.git"
   },
   "bugs": {
-    "url": "https://github.com/moxystudio/react-lib-template/issues"
+    "url": "https://github.com/moxystudio/next-button/issues"
   },
   "scripts": {
     "build:css": "rimraf dist && postcss src/styles/**/*.css --base src/styles --dir dist",
@@ -34,10 +36,12 @@
     "postrelease": "git push --follow-tags origin HEAD && npm publish"
   },
   "peerDependencies": {
+    "next": "^9.3.5",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
   "dependencies": {
+    "@moxy/next-link": "0.0.1",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
@@ -59,6 +63,7 @@
     "husky": "^4.0.10",
     "jest": "^25.2.6",
     "lint-staged": "^10.0.2",
+    "next": "^9.3.5",
     "postcss-cli": "^7.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
