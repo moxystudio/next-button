@@ -1,6 +1,6 @@
 {
   "name": "@moxy/next-button",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A react button that doubles down as a link.",
   "main": "lib/index.js",
   "module": "es/index.js",
