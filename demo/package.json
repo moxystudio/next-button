@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@moxy/next-button": "file:..",
-    "next": "^9.3.5",
+    "next": "^13.0.2",
     "onchange": "^6.1.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
